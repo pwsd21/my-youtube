@@ -1,19 +1,12 @@
 import "./App.css";
+import Body from "./components/Body";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="font-3xl">Ram Ram Bhai Saareya Ne</h1>
-      {/* 
-       Head
-       Body
-        SideBar
-         MenuItems
-        MainContainer
-         ButtonList
-         VideoContainer
-           VideoCard
-       */}
+      <Header />
+      <Body />
     </div>
   );
 }
