@@ -150,3 +150,5 @@ export const commentsData = [
     ],
   },
 ];
+
+export const LIVE_CHAT_OFFSET = 25;
