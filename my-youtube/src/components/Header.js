@@ -12,8 +12,6 @@ const Header = () => {
   const searchCache = useSelector((store) => store.search);
   // Debouncing
   useEffect(() => {
-    console.log(searchQuery);
-
     const timer = setTimeout(() => {
       if (searchCache[searchQuery]) {
         setSuggestions(searchCache[searchQuery]);

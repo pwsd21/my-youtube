@@ -190,3 +190,30 @@ export function randomTextGenerator(length) {
   }
   return result;
 }
+
+function isPrime(num) {
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return num > 1;
+}
+
+export function nthPrime(n) {
+  if (n === 1) {
+    return 2; // The first prime number
+  }
+
+  let count = 1;
+  let num = 3;
+
+  while (count < n) {
+    if (isPrime(num)) {
+      count++;
+    }
+    num += 2; // Check only odd numbers to skip even numbers (except 2)
+  }
+
+  return num - 2; // Adjust for the last increment in the loop
+}

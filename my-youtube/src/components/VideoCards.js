@@ -1,9 +1,7 @@
 import React from "react";
 
 const VideoCard = ({ info }) => {
-  console.log(info);
   const { snippet, statistics } = info;
-  console.log(snippet);
   const { channelTitle, thumbnails, title } = snippet;
   return (
     <div className="p-1 m-3 w-48 cursor-pointer shadow ">

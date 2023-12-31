@@ -13,7 +13,6 @@ const LiveChat = () => {
   useEffect(() => {
     const i = setInterval(() => {
       // API Polling - while using API just fetch it here and convert it to json
-      console.log("API POLLING");
 
       dispatch(
         addMessage({
